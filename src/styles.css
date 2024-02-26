@@ -21,3 +21,21 @@ body
     --hovercolor: rgb(106, 106, 106);
     --fontfamliy: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+[container]{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 45%;
+}
+@keyframes blackbox {
+    from {height: 100%; top: 0%; background-color: var(--seccolor);}
+    to {height: 0%; top: 100%; background-color: var(--seccolor);}
+}
+[blackbox]{
+    position: absolute;
+    height: 100%;
+    left: -100vw;
+    width: 140vw;
+    animation: blackbox 2s;
+    
+}
